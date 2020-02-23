@@ -1,0 +1,17 @@
+<template>
+
+</template>
+
+<script>
+export default {
+  name: "Toolbar",
+  data() {
+    return {
+
+    };
+  }
+};
+</script>
+
+<style>
+</style>

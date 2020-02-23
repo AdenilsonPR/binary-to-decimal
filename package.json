@@ -1,0 +1,29 @@
+{
+  "name": "bin-to-dec",
+  "version": "0.0.1",
+  "description": "Binary to decimal convertion.",
+  "productName": "Binary to decimal",
+  "cordovaId": "com.adenilsonpr",
+  "capacitorId": "",
+  "author": "Adenilson Prado Raul <adenilson.prado@hotmail.com>",
+  "private": true,
+  "scripts": {
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "dependencies": {
+    "@quasar/extras": "^1.0.0",
+    "quasar": "^1.0.0",
+    "vue-i18n": "^8.0.0"
+  },
+  "devDependencies": {
+    "@quasar/app": "^1.0.0"
+  },
+  "engines": {
+    "node": ">= 10.18.1",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
+  },
+  "browserslist": [
+    "last 1 version, not dead, ie >= 11"
+  ]
+}
