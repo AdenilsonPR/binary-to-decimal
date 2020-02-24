@@ -12,8 +12,14 @@
               <q-icon name="close" @click="bin = ''" />
             </template>
           </q-input>
-          <p class="col-12 q-pt-lg text-subtitle1">Result: {{ bin }}</p>
-          <q-btn size="lg" class="col-12 q-mt-sm" label="Calcular" color="deep-orange-8" />
+          <p class="col-12 q-pt-lg text-subtitle1">Result: {{ dec }}</p>
+          <q-btn
+            size="lg"
+            class="col-12 q-mt-sm"
+            label="Calcular"
+            color="deep-orange-8"
+            @click="calculate()"
+          />
         </div>
       </div>
     </div>
@@ -21,13 +27,26 @@
 </template>
 
 <script>
+import { binToDec } from "../business/converter.js";
+
 export default {
   name: "Home",
 
   data() {
     return {
-      bin: ""
+      bin: "",
+      dec: 0
     };
+  },
+
+  methods: {
+    calculate() {
+      if (this.bin != 0) {
+        this.dec = binToDec(this.bin);
+      } else {
+        this.dec = 0;
+      }
+    }
   }
 };
 </script>
